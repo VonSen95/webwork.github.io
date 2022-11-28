@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Color.css">
+<div class="topnav">
+    <img src="mentalhealth.png" alt="Mental health Logo">
+    <a href="index.html">Home</a>
+    <a href="knowmore.html">Know more</a>
+    <a href="about.html">About Us</a>
+    <a class="active" href="contact.html">Contact Us</a>
+    <style>
+        body{ 
+            place-items: left
+        }
+
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #0436aa;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #262ea2;
+        }
+        
+        .contactform {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+          width: 50%;
+        
+        }
+        </style>
+
+  </div>
+  <body>
+        
+    }
+    </script>
+    <h3>Contact Form</h3>
+    
+    <div class="contactform">
+      <form action="/action_page.php">
+        <label for="name">Yourname</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+    
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Your E-mail..">
+    
+        <label for="health">What will you like to talk about?</label>
+        <select id="mental" onchange='on_change(this)'>
+          <option value="selfesteem">Self Esteem</option>
+          <option value="stress">Stress</option>
+          <option value="anxiety">Anxiety</option>
+          <option value="depression">Depression</option>
+          <option value="bullying">Bullying</option>
+          <option value="selfharm">Self-Harm</option>
+          <option value="others">Others</option>
+        </select>
+
+        <div id="text" style="display:none;"> 
+            <input type="text" id="omental" name="omental" placeholder="Please describe how you are feeling..">
+        </div>
+
+        <script>
+            function on_change(el){
+                if(el.options[el.selectedIndex].value == 'others'){ 
+                    document.getElementById('text').style.display = 'block'; // Show el
+                }else{
+                    document.getElementById('text').style.display = 'none'; // Hide el
+                }
+            }
+        </script>
+
+        <label for="subject">Tell us a little more about yourself</label>
+        <textarea id="subject" name="subject" placeholder="" style="height:150px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+</body>
+<footer>
+    <p>By: Yim Soon Keat<br>
+    <a style="color:white;" href="yimsoonkeat@gmail.com">yimsoonkeat@gmail.com</a></p>
+</footer>
+
+
+</head>
